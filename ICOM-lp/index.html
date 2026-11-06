@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intelligent Communicator | Kamu Nggak Kurang Pengalaman, Kamu Cuma Lama Nggak Latihan Ngomongnya</title>
+<meta name="description" content="Ruang latihan wawancara kerja di HP: pewawancara bertanya dengan suara, kamu menjawab, lalu dapat umpan balik per jawaban dan kalimat bukti dari pengalamanmu sendiri. 15 menit sehari, 14 hari. Dibuka dari browser, tanpa install.">
+<meta property="og:title" content="Intelligent Communicator | Kamu Nggak Kurang Pengalaman, Kamu Cuma Lama Nggak Latihan Ngomongnya">
+<meta property="og:description" content="Latihan wawancara di HP, 15 menit sehari selama 14 hari. Tanpa install, tanpa akun.">
+<meta name="theme-color" content="#1E3A5F">
+<link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pri:#142A47;
+  --pri-mid:#1E3A5F;
+  --pri-soft:#E7EDF4;
+  --pri-deep:#0D1C31;
+  --madu:#F08A3C;
+  --madu-soft:#FDEBDC;
+  --madu-text:#A4521A;
+  --bara:#B4474E;
+  --bara-soft:#F8E6E7;
+  --bg:#F7F5F0;
+  --pasir:#EFEBE3;
+  --card:#FFFFFF;
+  --line:#E3DED4;
+  --line-soft:#ECE8E0;
+  --ink:#1F2430;
+  --muted:#5A6170;
+  --muted-light:#80868F;
+  --sans:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --radius:14px;
+  --radius-lg:20px;
+  --sinyal:#F08A3C;
+  --sinyal-deep:#A4521A;
+  --maxw:1120px;
+  --maxw-text:680px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;}
+h1,h2,h3,h4{margin:0;line-height:1.2;letter-spacing:-0.02em;color:var(--pri);font-family:var(--sans);}
+h1{font-size:clamp(31px,5.8vw,50px);font-weight:800;letter-spacing:-0.03em;line-height:1.1;}
+h2{font-size:clamp(25px,4.2vw,36px);font-weight:800;}
+h3{font-size:clamp(20px,2.6vw,24px);font-weight:700;}
+h4{font-size:17px;font-weight:700;}
+p{margin:0 0 1rem;}
+p:last-child{margin-bottom:0;}
+strong{font-weight:700;color:var(--pri);}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+.narrow{max-width:var(--maxw-text);margin-left:auto;margin-right:auto;}
+section{padding:56px 0;}
+@media(min-width:768px){section{padding:76px 0;}}
+.sec-alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.sec-deep{background:var(--pri-deep);color:#fff;}
+.sec-deep h2,.sec-deep h3{color:#fff;}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--pri-mid);margin:0 0 10px;}
+.eyebrow-bara{color:var(--bara);}
+.eyebrow-madu{color:var(--madu-text);}
+.lead{font-size:clamp(17px,2vw,19px);color:var(--muted);}
+.sec-deep .lead{color:#C8D4E3;}
+.center{text-align:center;}
+
+/* header */
+.site-head{background:var(--card);border-bottom:1px solid var(--line);padding:14px 0;position:relative;z-index:5;}
+.logo{display:inline-block;font-family:var(--sans);font-size:20px;font-weight:800;letter-spacing:-0.02em;color:var(--ink);text-decoration:none;line-height:1.2;}
+.logo em{font-style:normal;color:#E27C30;}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--sinyal);color:var(--ink);text-decoration:none;
+  font-weight:800;font-size:17px;letter-spacing:-0.01em;
+  padding:17px 28px;border-radius:12px;border:none;cursor:pointer;
+  box-shadow:0 3px 0 var(--sinyal-deep);
+  transition:transform .12s ease,box-shadow .12s ease,background .12s ease;
+  text-align:center;width:100%;
+}
+@media(min-width:560px){.btn{width:auto;font-size:18px;padding:18px 34px;}}
+.btn:hover{background:#F49A55;transform:translateY(-1px);box-shadow:0 4px 0 var(--sinyal-deep);}
+.btn:active{transform:translateY(2px);box-shadow:0 1px 0 var(--sinyal-deep);}
+.btn:focus-visible{outline:3px solid var(--pri-mid);outline-offset:3px;}
+.sec-deep .btn{background:var(--sinyal);color:var(--ink);box-shadow:0 3px 0 #08121F;}
+.sec-deep .btn:hover{background:#F49A55;}
+.btn-note{font-size:14.5px;color:var(--muted);margin-top:12px;}
+.sec-deep .btn-note{color:#A9B6C8;}
+.cta-block{margin-top:26px;}
+
+/* hero */
+.hero{background:var(--card);padding:28px 0 44px;border-bottom:1px solid var(--line);}
+.hero-grid{display:block;}
+.hero-img{margin:22px -20px 24px;}
+@media(min-width:900px){
+  .hero{padding:64px 0 72px;}
+  .hero-grid{display:grid;grid-template-columns:1fr 460px;grid-template-areas:"hd img" "rest img";column-gap:56px;align-items:center;}
+  .hero-hd{grid-area:hd;align-self:end;}
+  .hero-rest{grid-area:rest;align-self:start;padding-top:18px;}
+  .hero-img{grid-area:img;margin:0;align-self:center;}
+  .hero-img img{border-radius:var(--radius-lg);}
+}
+.hero-bullets{list-style:none;padding:0;margin:22px 0 0;}
+.hero-bullets li{position:relative;padding-left:30px;margin-bottom:12px;font-size:16.5px;color:var(--ink);}
+.hero-bullets li::before{content:"";position:absolute;left:0;top:8px;width:16px;height:16px;border-radius:50%;background:var(--pri-soft);border:2px solid var(--pri-mid);}
+.hero-bullets b{color:var(--pri);}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:20px;font-size:14.5px;color:var(--muted);font-weight:600;}
+.hero-facts span{white-space:nowrap;}
+
+/* cards */
+.grid{display:grid;gap:18px;}
+@media(min-width:760px){.grid-3{grid-template-columns:repeat(3,1fr);}}
+@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr);}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;}
+.sec-alt .card{background:var(--bg);}
+.card-quote{font-size:20px;font-weight:800;color:var(--bara);margin:0 0 10px;line-height:1.3;letter-spacing:-0.01em;}
+.card p{font-size:16px;color:var(--muted);}
+.card h3{margin-bottom:10px;}
+
+.pilar{border-left:4px solid var(--pri-mid);padding:4px 0 4px 18px;margin-bottom:20px;}
+.pilar.p-anak{border-color:#2F8F7A;}
+.pilar.p-ortu{border-color:var(--madu);}
+.pilar.p-darurat{border-color:var(--bara);}
+.pilar h4{margin-bottom:4px;color:var(--pri);}
+.pilar p{font-size:16px;color:var(--muted);margin:0;}
+.pilar p b{color:var(--pri);}
+.golden{margin-top:28px;font-size:25px;font-weight:800;color:var(--pri);margin-bottom:6px;line-height:1.3;letter-spacing:-0.02em;}
+
+/* steps */
+.step{display:grid;gap:20px;padding:28px 0;border-top:1px solid var(--line);}
+.narrow + .step{border-top:none;}
+@media(min-width:1024px){
+  .step.dimg{grid-template-columns:1fr 1.45fr;gap:48px;align-items:center;}
+  .step-img{order:2;}
+}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--pri-mid);color:#fff;font-weight:800;font-size:16px;margin-bottom:12px;}
+.step-copy p{color:var(--muted);margin-top:10px;}
+.step-wide{display:block;}
+.step-wide .step-copy{max-width:var(--maxw-text);}
+
+/* screenshot frames */
+.shot{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 1px 3px rgba(20,42,71,.08);}
+.shot-r{max-width:300px;width:100%;margin-left:auto;margin-right:auto;}
+@media(min-width:1024px){.shot-r{max-width:100%;}}
+[data-zoom]{cursor:zoom-in;}
+.m-only{display:inline;}
+@media(min-width:700px){.m-only{display:none;}}
+figure{margin:0;}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:8px;text-align:center;}
+
+/* feature rows */
+.feat{display:grid;gap:24px;padding:40px 0;border-top:1px solid var(--line);}
+@media(min-width:1024px){
+  .feat.dimg{grid-template-columns:1fr 1.45fr;gap:48px;align-items:center;}
+  .feat.dimg.flip{grid-template-columns:1.45fr 1fr;}
+  .feat-img{order:2;}
+  .feat.flip .feat-img{order:1;}
+  .feat.flip .feat-copy{order:2;}
+}
+.feat-copy h3{margin-bottom:12px;}
+.feat-copy p{color:var(--muted);font-size:16.5px;}
+.feat-pair{padding-top:40px;border-top:1px solid var(--line);}
+
+/* alat */
+.alat-tabs{display:none;}
+.alat-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:4px 20px 6px;margin:0 -20px;}
+.alat-track::-webkit-scrollbar{display:none;}
+.alat-item{flex:0 0 80%;scroll-snap-align:center;}
+.alat-item h3{font-size:19px;margin:16px 0 6px;}
+.alat-item p{font-size:15.5px;color:var(--muted);margin:0;}
+.alat-dots{display:flex;justify-content:center;gap:8px;margin-top:18px;}
+.alat-dots button,.testi-dots button{width:8px;height:8px;padding:0;border:none;border-radius:50%;background:var(--line);cursor:pointer;transition:background .2s ease,width .2s ease;}
+.alat-dots button.on,.testi-dots button.on{background:var(--pri-mid);width:22px;border-radius:5px;}
+.alat-dots button:focus-visible,.testi-dots button:focus-visible{outline:2px solid var(--pri-mid);outline-offset:3px;}
+@media(min-width:1024px){
+  .alat-tabs{display:flex;justify-content:center;gap:8px;margin-bottom:26px;flex-wrap:wrap;}
+  .alat-tabs button{font:inherit;font-size:15.5px;font-weight:700;color:var(--pri);background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:10px 20px;cursor:pointer;}
+  .alat-tabs button[aria-selected="true"]{background:var(--pri-mid);border-color:var(--pri-mid);color:#fff;}
+  .alat-tabs button:focus-visible{outline:3px solid var(--madu);outline-offset:2px;}
+  .alat-track{display:block;overflow:visible;padding:0;margin:0;}
+  .alat-item{display:none;}
+  .alat-item.on{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:center;}
+  .alat-item h3{font-size:24px;margin:0 0 10px;}
+  .alat-item p{font-size:16.5px;}
+  .alat-dots{display:none;}
+}
+.also{max-width:var(--maxw-text);margin:34px auto 0;text-align:center;font-size:16px;color:var(--muted);}
+
+/* jelas */
+.clear-card p{color:var(--muted);font-size:16.5px;}
+.clear-yes{border-top:4px solid var(--pri-mid);}
+.clear-no{border-top:4px solid var(--madu);}
+
+.fitlist{list-style:none;padding:0;margin:0;}
+.fitlist li{position:relative;padding-left:30px;margin-bottom:13px;font-size:16.5px;}
+.fitlist li::before{position:absolute;left:0;top:0;font-weight:800;font-size:17px;}
+.fit-yes li::before{content:"✓";color:var(--pri-mid);}
+.fit-no li::before{content:"✕";color:var(--bara);}
+
+/* table */
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;border:1px solid var(--line);border-radius:var(--radius);}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:15.5px;background:var(--card);}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:none;}
+thead th{font-size:13.5px;font-weight:700;color:var(--muted);border-bottom:2px solid var(--line);}
+thead th.hl{color:var(--pri);}
+tbody td.hl{font-weight:700;color:var(--pri);background:var(--pri-soft);}
+tbody th{font-weight:600;color:var(--ink);width:19%;}
+
+/* testimoni */
+.testi-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:4px 20px 6px;margin:0 -20px;}
+.testi-grid::-webkit-scrollbar{display:none;}
+.testi-grid img{flex:0 0 78%;scroll-snap-align:center;width:100%;height:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:0 1px 3px rgba(20,42,71,.08);}
+.testi-dots{display:flex;justify-content:center;gap:8px;margin-top:16px;}
+@media(min-width:700px){
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;overflow:visible;padding:0;margin:0;}
+  .testi-grid img{flex:none;}
+  .testi-dots{display:none;}
+}
+
+/* nilai (naratif) */
+.story{max-width:var(--maxw-text);margin:0 auto 34px;}
+.story p{font-size:clamp(17px,2vw,18.5px);color:var(--muted);}
+.story p.punch{font-size:clamp(19px,2.4vw,22px);font-weight:700;color:var(--pri);line-height:1.45;margin-top:22px;}
+.price-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px 22px;max-width:620px;margin:0 auto;}
+.sec-alt .price-card{background:var(--bg);}
+@media(min-width:640px){.price-card{padding:36px;}}
+.incl{list-style:none;padding:0;margin:18px 0 0;}
+.incl li{position:relative;padding:10px 0 10px 30px;border-bottom:1px solid var(--line-soft);font-size:16px;}
+.incl li:last-child{border-bottom:none;}
+.incl li::before{content:"✓";position:absolute;left:0;top:10px;font-weight:800;color:var(--pri-mid);}
+.once-box{text-align:center;background:var(--madu-soft);border-radius:var(--radius);padding:18px 20px;margin:24px 0 0;font-size:16.5px;color:var(--ink);}
+.once-box b{display:block;font-size:19px;color:var(--pri);margin-bottom:2px;}
+
+.flow{max-width:620px;margin:40px auto 0;}
+.flow h3{text-align:center;margin-bottom:18px;font-size:clamp(19px,2.4vw,22px);}
+.flow ol{list-style:none;padding:0;margin:0;counter-reset:f;}
+.flow li{counter-increment:f;position:relative;padding:0 0 18px 48px;font-size:16px;color:var(--muted);}
+.flow li:last-child{padding-bottom:0;}
+.flow li::before{content:counter(f);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--pri-soft);color:var(--pri);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.flow li b{display:block;color:var(--pri);font-size:16.5px;}
+
+/* faq */
+.faq-key{background:var(--card);border:3px solid var(--madu);border-radius:var(--radius);padding:22px;margin-bottom:16px;}
+.faq-key h3{font-size:clamp(20px,3.2vw,23px);margin-bottom:12px;}
+.faq-key p{font-size:17.5px;color:var(--muted);margin:0 0 10px;}
+.faq-key ol{margin:0;padding:0 0 0 24px;font-size:clamp(17.5px,2.6vw,19px);line-height:1.5;}
+.faq-key li{margin-bottom:10px;padding-left:4px;}
+.faq-key li:last-child{margin-bottom:0;}
+.faq-key li::marker{font-weight:800;color:var(--madu-text);}
+.faq-key b{color:var(--pri);}
+.faq{border-top:1px solid var(--line);margin-top:30px;}
+.faq details{border-bottom:1px solid var(--line);}
+.faq summary{cursor:pointer;padding:18px 34px 18px 0;position:relative;font-weight:700;font-size:16.5px;color:var(--pri);list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"";position:absolute;right:6px;top:26px;width:9px;height:9px;border-right:2.5px solid var(--pri-mid);border-bottom:2.5px solid var(--pri-mid);transform:rotate(45deg);transition:transform .18s ease;}
+.faq details[open] summary::after{transform:rotate(-135deg);top:28px;}
+.faq summary:focus-visible{outline:2px solid var(--pri-mid);outline-offset:2px;}
+.faq .ans{padding:0 0 20px;color:var(--muted);font-size:16.5px;}
+
+.closing-line{font-size:25px;font-weight:800;color:#fff;margin-top:24px;line-height:1.3;letter-spacing:-0.02em;}
+
+/* sticky bar */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);padding:10px 16px;box-shadow:0 -3px 14px rgba(20,42,71,.12);display:flex;align-items:center;gap:12px;transform:translateY(110%);transition:transform .25s ease;}
+.sticky-cta.on{transform:translateY(0);}
+.sticky-cta .sp{flex:1;min-width:0;}
+.sticky-cta .sp b{display:block;font-size:16.5px;color:var(--pri);line-height:1.2;}
+.sticky-cta .sp small{font-size:12.5px;color:var(--muted);}
+.sticky-cta .btn{width:auto;padding:14px 22px;font-size:15.5px;flex-shrink:0;}
+@media(min-width:900px){.sticky-cta{display:none;}}
+body.has-sticky{padding-bottom:82px;}
+@media(min-width:900px){body.has-sticky{padding-bottom:0;}}
+
+/* footer */
+.site-foot{background:var(--card);border-top:1px solid var(--line);padding:30px 0;text-align:center;}
+.site-foot .logo{display:block;margin-bottom:6px;}
+.site-foot small{font-size:13.5px;color:var(--muted-light);}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(9,18,32,.92);display:none;align-items:center;justify-content:center;padding:56px 12px 20px;}
+.lb.on{display:flex;}
+.lb-inner{max-width:1400px;width:100%;max-height:100%;overflow:auto;-webkit-overflow-scrolling:touch;border-radius:10px;}
+.lb img{width:auto;max-width:100%;max-height:86vh;margin:0 auto;border-radius:10px;}
+.lb-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;background:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.lb-close:focus-visible{outline:3px solid var(--madu);outline-offset:2px;}
+.lb-close svg{width:18px;height:18px;}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
+.pilar.pl-sim{border-color:#1E3A5F;}
+.pilar.pl-ub{border-color:#F08A3C;}
+.pilar.pl-bukti{border-color:#2F8F7A;}
+.eyebrow-sim{color:#1E3A5F;}
+.eyebrow-ub{color:#A4521A;}
+.eyebrow-bukti{color:#1F6B5A;}
+@media(min-width:700px){.testi-grid img{max-width:100%;}}
+@media(min-width:1024px){.testi-grid{grid-template-columns:repeat(5,1fr);gap:14px;}}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Intelligent Communicator, halaman utama">Intelligent <em>Communicator</em></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-hd">
+        <h1>Kamu nggak kurang pengalaman. Kamu cuma lama nggak latihan ngomongnya.</h1>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-mockup.webp" alt="Intelligent Communicator: 14 hari latihan interview, biar jawaban lebih meyakinkan. Simulasi interview, umpan balik, dan program 14 hari" width="1122" height="1402" fetchpriority="high">
+      </div>
+      <div class="hero-rest">
+        <p class="lead">CV bikin kamu dipanggil. Yang dinilai di ruang interview adalah cara kamu ngomong, dan terakhir kali kamu menjelaskan diri dengan suara keras mungkin sudah bertahun-tahun lalu. Intelligent Communicator adalah ruang latihan wawancara di HP dengan Metode Latih Ulang 14 Hari: pewawancara bertanya dengan suara, kamu menjawab, lalu app menunjukkan bagian yang bikin kamu kedengaran ragu dan memberi kalimat pengganti dari pengalamanmu sendiri. 15 menit sehari.</p>
+        <ul class="hero-bullets">
+          <li><b>Sudah beberapa kali dipanggil, tapi nggak ada yang lanjut?</b> Umpan balik per jawaban menunjukkan bagian yang melemahkanmu: jawaban yang muter dulu ke latar belakang, “eh” dan “maaf”, atau “cepat belajar” tanpa bukti.</li>
+          <li><b>Nge-blank tiap diminta contoh?</b> Bank Bukti mengubah pengalaman lamamu jadi kalimat berangka, sekali saja, lalu kalimat itu muncul di semua pertanyaan.</li>
+          <li><b>Malu latihan di depan orang, nggak sempat ikut kelas?</b> Latihan di HP jam berapa pun, setelah anak tidur sekalipun. Pewawancaranya bisa ramah, datar, atau suka memotong.</li>
+        </ul>
+        <div class="cta-block">
+          <a class="btn" href="checkout.html">Mulai Latihan 15 Menit →</a>
+          <p class="btn-note">Dibuka dari browser HP atau laptop. Tanpa install, tanpa akun.</p>
+        </div>
+        <div class="hero-facts">
+          <span>15 menit sehari</span>
+          <span>14 hari program</span>
+          <span>6 aspek dicek tiap jawaban</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ADEGAN -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:34px;">
+      <h2>Baca tiga ini. Kalau ada satu yang kejadian minggu ini, kamu di tempat yang benar.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <p class="card-quote">“Bisa kasih satu contoh?”</p>
+        <p>Pewawancara menunggu. Lima belas tahun kerja ada di kepalamu, tapi yang keluar cuma “saya orangnya cepat belajar, rapi, gampang akrab”. Dia mengangguk, menulis sesuatu, lalu pindah ke pertanyaan berikutnya.</p>
+      </div>
+      <div class="card">
+        <p class="card-quote">“Kenapa lama nggak kerja, Bu?”</p>
+        <p>Kamu langsung menunduk. Jawabanmu mulai dengan “maaf” dan berputar ke cerita yang panjang, seperti orang yang mengaku salah. Padahal kamu nggak salah apa-apa.</p>
+      </div>
+      <div class="card">
+        <p class="card-quote">“Tadi saya ingat, terus lupa.”</p>
+        <p>Di ojek pulang dari interview, jawaban yang bagus baru muncul satu per satu. Di rumah anakmu bertanya, “Gimana, Ma?” Kamu bilang “nunggu kabar”, padahal kamu sudah tahu jawabannya.</p>
+      </div>
+    </div>
+    <p class="narrow lead center" style="margin-top:30px;">Tiga adegan ini kelihatan beda. Akarnya sama, dan bukan karena kamu kurang mampu.</p>
+  </div>
+</section>
+
+<!-- MEKANISME -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow">
+      <h2>Pewawancara nggak membaca CV-mu. Mereka mendengar caramu bercerita.</h2>
+      <p style="margin-top:18px;">Pengalamanmu nggak hilang. Yang hilang adalah kebiasaan menjelaskannya dengan suara keras. Orang yang lama nggak latihan cenderung mulai dari latar belakang, mengisi jeda dengan “eh”, minta maaf atas hal yang bukan kesalahan, dan menyebut sifat tanpa bukti. Semuanya bisa dilatih, asal ada yang mendengar dan memberi tahu bagian mana yang perlu diganti.</p>
+      <p>Intelligent Communicator memakai <b>Metode Latih Ulang 14 Hari</b>:</p>
+
+      <div style="margin-top:26px;">
+        <div class="pilar pl-sim"><h4>Simulasi bersuara</h4><p>Kamu pilih posisi yang dilamar. Pewawancara membacakan pertanyaan yang paling sering keluar untuk posisi itu, kamu menjawab dengan diketik atau dengan suara keras.</p></div>
+        <div class="pilar pl-ub"><h4>Umpan balik per jawaban</h4><p>Setiap jawaban dicek dari 6 sisi yang biasa dinilai HRD: panjang jawaban, kata pengisi, kata ragu dan minta maaf, sifat umum tanpa bukti, angka atau bukti, dan cara membuka. Lalu ada versi jawaban yang lebih kena.</p></div>
+        <div class="pilar pl-bukti"><h4>Bank Bukti</h4><p>Pengalaman lamamu diubah jadi kalimat “Saya ... sehingga ...”, lengkap dengan angkanya. Sekali diisi, kalimat itu dipakai di semua pertanyaan.</p></div>
+      </div>
+
+      <p style="margin-top:26px;">Programnya menyesuaikan tanggal interviewmu. Interview kurang dari 14 hari lagi? Latihan dipadatkan ke bagian yang paling sering bikin nge-blank. Interview besok? Ada <b>latihan kilat</b> 4 pertanyaan.</p>
+
+      <p class="golden">Targetnya bukan menghafal jawaban yang sempurna. Targetnya kepalamu nggak kosong lagi saat duduk di depan pewawancara.</p>
+      <p style="color:var(--muted);">Aturan yang dijaga app: satu hari program per hari, dan hari baru terbuka besok pagi. Jadi kamu menjawab dengan suaramu sendiri sedikit demi sedikit setiap hari, bukan menghafal semuanya semalam sebelum interview.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARA KERJA -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:10px;">
+      <h2>Nggak perlu tahu teori wawancara. App-nya yang nuntun.</h2>
+    </div>
+
+    <div class="step step-wide">
+      <div class="step-copy">
+        <div class="step-num">1</div>
+        <h3>Masukkan kode akses</h3>
+        <p>Kodenya ada di Panduan Akses di emailmu. Cukup sekali, setelah itu tersimpan.</p>
+      </div>
+    </div>
+
+    <div class="step dimg">
+      <div class="step-copy">
+        <div class="step-num">2</div>
+        <h3>Siapkan interview, 2 menit</h3>
+        <p>Posisi yang dilamar, pekerjaan terakhir, kondisimu sekarang, dan kapan interviewnya. App menyusun rencana latihanmu dan menunjukkan pertanyaan yang paling mungkin keluar.</p>
+      </div>
+      <div class="step-img">
+        <picture><source media="(min-width:1024px)" srcset="img/rencana-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/rencana.webp" alt="Layar Rencana latihanmu: interview 14 hari lagi, latihan disusun jadi 14 hari 15 menit sehari, tanda pindah bidang, dan pertanyaan yang paling mungkin keluar untuk staf operasional" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="step step-wide">
+      <div class="step-copy">
+        <div class="step-num">3</div>
+        <h3>Mulai Hari 1, 15 menit</h3>
+        <p>Perkenalan 45 detik, dimulai dari yang kamu paling jago, bukan dari latar belakang.</p>
+      </div>
+    </div>
+
+    <div class="cta-block narrow center" style="margin-top:34px;">
+      <a class="btn" href="checkout.html">Mulai Latihan 15 Menit →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FITUR -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center">
+      <h2>Yang kamu pakai tiap hari</h2>
+    </div>
+
+    <div class="feat dimg" style="border-top:none;">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-sim">Simulasi</p>
+        <h3>Jam sepuluh malam, rumah sudah sepi, pewawancaranya mulai bertanya.</h3>
+        <p style="margin-top:12px;">Pertanyaan dibacakan dengan suara, kamu menjawab dengan diketik, didikte lewat mikrofon keyboard, atau dengan suara keras. Di mode lisan kamu bisa merekam lalu mendengar ulang jawabanmu sendiri. Rekamannya hilang saat latihan ditutup.</p>
+        <p>Pilih gayanya: Ramah untuk hari pertama, Datar seperti pewawancara yang tanpa senyum, atau Suka Memotong yang menyela kalau jawabanmu kepanjangan.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/simulasi-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/simulasi.webp" alt="Layar simulasi Hari 7: pertanyaan 1 dari 3 Apa kelebihan Ibu, tombol Dengar pertanyaan lagi, kolom jawaban, dan tombol Selesai menjawab" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat dimg flip">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-ub">Umpan Balik</p>
+        <h3>Kelihatan di mana kamu kedengaran ragu.</h3>
+        <p style="margin-top:12px;">Kata pengisi, kata “maaf” dan “mungkin”, dan sifat umum seperti “cepat belajar” langsung disorot di jawabanmu. Di bawahnya ada penjelasan per aspek dan versi jawaban yang lebih kena, disusun dari kalimat buktimu sendiri.</p>
+        <p>Tekan Ulang lebih pelan, jawab lagi, lalu lihat aspek mana yang naik. Jawaban yang sudah enak disalin jadi jawaban andalan.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/umpan-balik-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/umpan-balik.webp" alt="Layar umpan balik: 1 dari 6 sudah kena, jawaban dengan sorotan pada eh, jadi, cepat belajar, maaf, dan mungkin, lalu penjelasan panjang jawaban dan kata pengisi" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat dimg">
+      <div class="feat-copy">
+        <p class="eyebrow eyebrow-bukti">Bank Bukti</p>
+        <h3>Lima belas tahun kerja, jadi lima kalimat yang diingat pewawancara.</h3>
+        <p style="margin-top:12px;">Tiga pertanyaan pelan: masalah apa yang sering muncul di tempat kerja lama, apa yang kamu ubah, dan hasilnya berapa. Jadinya kalimat seperti “Saya menyusun ulang jadwal dokter sehingga waktu tunggu pasien turun setengah.”</p>
+        <p>Ada kartu Ganti kata untuk “cepat belajar”, “rapi”, dan “teliti”, plus contoh kalimat bukti untuk posisi yang kamu lamar. App nggak pernah mengarang angkamu.</p>
+      </div>
+      <div class="feat-img">
+        <picture><source media="(min-width:1024px)" srcset="img/bank-bukti-d.webp" width="1400" height="875"><img class="shot shot-r" data-zoom src="img/bank-bukti.webp" alt="Layar Bank Bukti: 5 kalimat bukti siap pakai, tombol Tambah bukti baru, Ganti kata yang bikin kamu dilupakan, dan Lihat contoh untuk staf operasional" width="728" height="1575" loading="lazy"></picture>
+      </div>
+    </div>
+
+    <div class="feat-pair">
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Jawabanmu tetap di HP kamu.</h3>
+          <p>Tanpa akun dan password. Posisi, jawaban, dan kalimat buktimu tersimpan di perangkatmu, tidak dikirim ke mana pun. Ganti HP? Pindahkan progres dengan satu kode.</p>
+        </div>
+        <div class="card">
+          <h3>Satu HP sudah cukup.</h3>
+          <p>Dibuka dari browser HP atau laptop, bisa dipasang di layar utama. Hurufnya bisa dibesarkan, suara pewawancara bisa diatur kecepatannya.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALAT -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:30px;">
+      <h2>Dan yang menemanimu sampai hari interview.</h2>
+      <p class="lead" style="margin-top:12px;">Semuanya bisa dibuka kapan saja.<span class="m-only"> Geser untuk melihat yang lain.</span></p>
+    </div>
+
+    <div class="alat-tabs" role="tablist" aria-label="Pilih alat">
+      <button type="button" role="tab" id="tab-harih" aria-controls="alat-harih" aria-selected="true">Mode Hari H</button>
+      <button type="button" role="tab" id="tab-keluarga" aria-controls="alat-keluarga" aria-selected="false" tabindex="-1">Latihan Bareng Keluarga</button>
+      <button type="button" role="tab" id="tab-kilat" aria-controls="alat-kilat" aria-selected="false" tabindex="-1">Latihan Kilat</button>
+    </div>
+
+    <div class="alat-track" id="alatTrack">
+      <div class="alat-item on" id="alat-harih" role="tabpanel" aria-labelledby="tab-harih">
+        <picture><source media="(min-width:1024px)" srcset="img/hari-h-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/hari-h.webp" alt="Layar Hari H: kamu sudah latihan 18 jawaban, napas 4 hitungan, perkenalan 45 detikmu, dan 5 kalimat bukti terbaik" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Mode Hari H</h3>
+          <p>Di hari interview, app berganti jadi mode tenang: napas 4 hitungan, perkenalan 45 detikmu, 5 kalimat bukti terbaik, dan 3 pertanyaan balik untuk penutup interview. Bisa dibaca di ruang tunggu.</p>
+        </div>
+      </div>
+      <div class="alat-item" id="alat-keluarga" role="tabpanel" aria-labelledby="tab-keluarga">
+        <picture><source media="(min-width:1024px)" srcset="img/keluarga-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/keluarga.webp" alt="Layar Latihan bareng keluarga: serahkan HP ke pewawancaramu, dengan 4 petunjuk untuk pewawancara dan tombol Mulai" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Latihan Bareng Keluarga</h3>
+          <p>Serahkan HP ke anak, pasangan, atau teman. Mereka membacakan pertanyaan dan menekan Pertanyaan susulan kalau jawabanmu kurang jelas. Latihan dengan orang sungguhan bikin deg-degannya mirip yang beneran.</p>
+        </div>
+      </div>
+      <div class="alat-item" id="alat-kilat" role="tabpanel" aria-labelledby="tab-kilat">
+        <picture><source media="(min-width:1024px)" srcset="img/kilat-d.webp" width="1400" height="875"><img class="shot" data-zoom src="img/kilat.webp" alt="Layar Hari Ini versi latihan kilat: interview H-1, pengingat buka Ceklis 24 Jam, latihan kilat 4 pertanyaan, dan tugas kecil Ceklis 24 Jam Sebelum Interview" width="728" height="1575" loading="lazy"></picture>
+        <div>
+          <h3>Latihan Kilat</h3>
+          <p>Dipanggil interview besok pagi? Empat pertanyaan paling penting untuk kondisimu, lalu Ceklis 24 Jam Sebelum Interview: baju, rute, dokumen, dan latihan terakhir.</p>
+        </div>
+      </div>
+    </div>
+    <div class="alat-dots" id="alatDots" aria-hidden="true">
+      <button type="button" class="on" data-i="0" aria-label="Alat 1"></button>
+      <button type="button" data-i="1" aria-label="Alat 2"></button>
+      <button type="button" data-i="2" aria-label="Alat 3"></button>
+    </div>
+
+    <p class="also">Juga ada Kartu Contekan Hari H dan Naskah Jawaban “Kenapa Lama Nggak Kerja?” (bonus cetak), Latihan bebas untuk pertanyaan mana saja di posisimu, Riwayat jawaban, grafik rasa siap, dan Pindah Progres untuk ganti HP.</p>
+  </div>
+</section>
+
+<!-- SUPAYA JELAS -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Supaya jelas dari awal</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card clear-card clear-yes">
+        <h3>Intelligent Communicator bisa</h3>
+        <p>jadi ruang latihan wawancara pribadi di HP, membacakan pertanyaan yang paling sering keluar untuk posisimu, menunjukkan bagian jawaban yang bikin kamu kedengaran ragu, mengubah pengalaman lamamu jadi kalimat bukti berangka, dan menyusun latihan 14 hari sesuai tanggal interviewmu.</p>
+      </div>
+      <div class="card clear-card clear-no">
+        <h3>Intelligent Communicator bukan</h3>
+        <p>jaminan diterima kerja atau lolos interview, karena hasilnya tetap ditentukan banyak hal di luar latihan. Bukan chatbot AI yang diajak ngobrol bebas: pewawancaranya suara bawaan HP, dan umpan baliknya disusun dari pola jawaban yang biasa dinilai HRD. Bukan jalan menembus batas usia di lowongan, gunanya saat kamu sudah dipanggil. Bukan alat untuk dipakai diam-diam saat interview berlangsung. Kalau gugupnya sudah sampai susah tidur atau susah napas, ngobrol dengan psikolog bisa sangat membantu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UNTUK SIAPA -->
+<section>
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="margin-bottom:16px;">Cocok kalau</h3>
+        <ul class="fitlist fit-yes">
+          <li>Kamu pernah kerja bertahun-tahun di satu tempat dan sekarang cari kerja lagi.</li>
+          <li>Kamu sudah beberapa kali dipanggil interview, tapi belum ada yang lanjut.</li>
+          <li>Kamu sering nge-blank saat diminta contoh, atau jawabanmu terasa muter-muter.</li>
+          <li>Kamu mau kembali kerja setelah jeda dan takut ditanya “kenapa lama nggak kerja”.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:16px;">Bukan untuk kamu kalau</h3>
+        <ul class="fitlist fit-no">
+          <li>Kamu cari jaminan pasti diterima.</li>
+          <li>Kamu butuh latihan interview bahasa Inggris atau interview teknis seperti coding.</li>
+          <li>Kamu cari alat yang membisikkan jawaban saat interview berlangsung.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERBANDINGAN -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Kenapa app ini, bukan cara yang biasa dicoba.</h2>
+    </div>
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Video contoh jawaban</th>
+            <th>Paket PDF tips interview</th>
+            <th>Coach atau kelas interview</th>
+            <th class="hl">Intelligent Communicator</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Cara latihannya</th><td>Ditonton, lalu dihafal</td><td>Dibaca, lalu dihafal</td><td>Latihan dengan orang, terjadwal</td><td class="hl">Kamu menjawab sendiri dengan suara, kapan saja</td></tr>
+          <tr><th>Jawabannya dari mana</th><td>Pengalaman orang lain</td><td>Template umum</td><td>Dari sesi dengan coach</td><td class="hl">Kalimat bukti dari pengalamanmu sendiri</td></tr>
+          <tr><th>Ada yang mengoreksi</th><td>Nggak ada</td><td>Nggak ada</td><td>Ada, selama sesi</td><td class="hl">Setiap jawaban, 6 aspek</td></tr>
+          <tr><th>Sesuai posisi dan tanggal</th><td>Nggak</td><td>Nggak</td><td>Tergantung coach</td><td class="hl">Disusun dari posisi dan tanggal interviewmu</td></tr>
+          <tr><th>Biaya</th><td>Gratis</td><td>Sekitar Rp99 ribu</td><td>Dibayar per sesi</td><td class="hl">Sekali bayar, tanpa langganan</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section>
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:28px;">
+      <h2>Cerita dari yang sudah pakai.</h2>
+      <p class="lead" style="margin-top:12px;"><span class="m-only">Geser untuk melihat cerita lainnya. </span>Nomor disensor untuk menjaga privasi.</p>
+    </div>
+    <div class="testi-grid">
+      <img src="img/testi1.webp" alt="Screenshot WhatsApp: dulu cuma bisa bilang saya orangnya teliti, lewat Bank Bukti teringat kartu stok tiap rak yang bikin selisih stok tinggal sekali sebulan" width="748" height="1564" loading="lazy">
+      <img src="img/testi2.webp" alt="Screenshot WhatsApp: tiap malam latihan dengan pewawancara Suka Memotong, saat HRD memotong di interview langsung menjawab intinya tanpa panik" width="748" height="1564" loading="lazy">
+      <img src="img/testi3.webp" alt="Screenshot WhatsApp: rekaman pertama berisi 11 kali eh, setelah Ulang lebih pelan tinggal 1, apoteker bilang ngomongnya tenang" width="748" height="1564" loading="lazy">
+      <img src="img/testi4.webp" alt="Screenshot WhatsApp: interview besok pagi, latihan kilat 4 pertanyaan dan ceklis malam sebelumnya, pertama kali nggak nge-blank" width="748" height="1564" loading="lazy">
+      <img src="img/testi5.webp" alt="Screenshot WhatsApp: jawaban pekerja keras dan cepat belajar disorot, diganti versi lebih kena dari Bank Bukti, interview jadi hampir sejam" width="748" height="1564" loading="lazy">
+    </div>
+    <div class="testi-dots" id="testiDots" aria-hidden="true">
+      <button type="button" class="on" data-i="0" aria-label="Testimoni 1"></button>
+      <button type="button" data-i="1" aria-label="Testimoni 2"></button>
+      <button type="button" data-i="2" aria-label="Testimoni 3"></button>
+      <button type="button" data-i="3" aria-label="Testimoni 4"></button>
+      <button type="button" data-i="4" aria-label="Testimoni 5"></button>
+    </div>
+  </div>
+</section>
+
+<!-- NILAI (NARATIF, TANPA HARGA) -->
+<section class="sec-alt">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:24px;">
+      <h2>Berapa yang sudah keluar selama ini?</h2>
+    </div>
+    <div class="story">
+      <p>Coba hitung apa saja yang sudah keluar untuk tiap panggilan interview. Ongkos ke kantor yang jauh, fotokopi berkas, baju yang disetrika semalaman. Belum lagi hari yang dipakai menunggu kabar, dan rasa malu yang dibawa pulang setiap kali pewawancara cuma mengangguk.</p>
+      <p>Panggilan interview datangnya jarang, apalagi setelah lama nggak kerja. Satu panggilan yang terlewat karena kepala kosong biayanya lebih besar dari ongkos datang ke sana.</p>
+      <p class="punch">Intelligent Communicator sekali bayar, tanpa langganan, dan harganya di bawah satu paket PDF tips interview. Angkanya ada di halaman berikutnya.</p>
+    </div>
+
+    <div class="price-card">
+      <h3 class="center">Yang kamu dapat begitu masuk</h3>
+      <ul class="incl">
+        <li>Siapkan Interview 2 menit dan rencana latihan sesuai tanggal interviewmu</li>
+        <li>Program 14 hari, 15 menit sehari, dengan latihan kilat kalau interviewnya besok</li>
+        <li>Simulasi bersuara dengan pertanyaan khusus 10 posisi, 3 gaya pewawancara, jawab diketik atau lisan</li>
+        <li>Umpan balik 6 aspek, versi jawaban yang lebih kena, dan Ulang lebih pelan</li>
+        <li>Bank Bukti dengan kartu Ganti kata dan contoh kalimat per posisi</li>
+        <li>Mode Hari H dan Latihan Bareng Keluarga</li>
+        <li>3 bonus cetak: Kartu Contekan Hari H, Naskah Jawaban “Kenapa Lama Nggak Kerja?”, Ceklis 24 Jam Sebelum Interview</li>
+        <li>Riwayat jawaban, grafik rasa siap, dan Pindah Progres untuk ganti HP</li>
+      </ul>
+      <div class="once-box">
+        <b>Sekali bayar, tanpa langganan.</b>
+        Semua fitur langsung terbuka, tanpa paket basic dan premium.
+      </div>
+      <div class="cta-block center">
+        <a class="btn" href="checkout.html">Mulai Latihan 15 Menit →</a>
+        <p class="btn-note">Panduan Akses berisi kode masuk dikirim ke email yang kamu pakai saat order.</p>
+      </div>
+    </div>
+
+    <div class="flow">
+      <h3>Dari bayar sampai latihan pertama, tiga langkah.</h3>
+      <ol>
+        <li><b>Selesaikan pembayaran</b>Bisa pakai QRIS, transfer bank, atau e-wallet.</li>
+        <li><b>Buka email, klik link biru</b>Klik link biru yang diawali drive.google.com, bukan tombol “Unduh Produk”. Kalau belum ada di kotak masuk, cek folder Spam atau Promosi.</li>
+        <li><b>Masukkan kode, lalu siapkan interview</b>Buka icom-kit.netlify.app, masukkan kode, isi Siapkan Interview 2 menit, lalu mulai Hari 1.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="narrow">
+      <h2 class="center" style="margin-bottom:26px;">Pertanyaan yang sering masuk</h2>
+
+      <div class="faq-key">
+        <h3>Aku sudah bayar. Kodenya di mana?</h3>
+        <ol>
+          <li>Buka email pembelianmu.</li>
+          <li>Klik <b>link biru yang diawali drive.google.com</b>.</li>
+          <li>PDF Panduan Akses terbuka. Kodenya ada di dalamnya.</li>
+        </ol>
+      </div>
+
+      <div class="faq-key">
+        <h3>Aku sudah klik &quot;Unduh Produk&quot;, tapi nggak ada kodenya.</h3>
+        <p>Nggak apa-apa, kamu cuma salah klik. Balik ke email yang sama, lalu:</p>
+        <ol>
+          <li>Cari <b>link biru yang diawali drive.google.com</b>. Letaknya di atas tombol Unduh Produk.</li>
+          <li>Klik link itu, bukan tombolnya.</li>
+          <li>Kodenya ada di PDF Panduan Akses yang terbuka.</li>
+        </ol>
+      </div>
+
+      <div class="faq">
+        <details><summary>Kodenya ditolak.</summary><div class="ans">Pastikan kamu membuka icom-kit.netlify.app, lalu ketik atau salin kode dari Panduan Akses apa adanya. Huruf besar kecil, spasi, dan tanda strip yang ikut tersalin nggak masalah. Masih ditolak? Balas email pembelianmu.</div></details>
+        <details><summary>Harganya berapa?</summary><div class="ans">Harganya tertera di halaman pembayaran setelah kamu klik tombol Mulai. Sekali bayar, tanpa biaya bulanan, dan semua fitur langsung terbuka.</div></details>
+        <details><summary>Apakah ini menjamin aku diterima kerja?</summary><div class="ans">Nggak ada yang bisa menjamin itu. Yang app bantu adalah kesiapanmu: sudah menjawab pertanyaan yang paling sering keluar berkali-kali, punya kalimat bukti dari pengalamanmu, dan tahu bagian mana yang bikin kamu kedengaran ragu.</div></details>
+        <details><summary>Pewawancaranya AI?</summary><div class="ans">Bukan chatbot. Pertanyaannya dibacakan dengan suara bawaan HP, lalu jawabanmu dicek dengan aturan dari pola jawaban yang biasa dinilai HRD. Karena itu umpan baliknya selalu sama untuk jawaban yang sama, dan app nggak pernah mengarang angka pencapaianmu.</div></details>
+        <details><summary>Umurku sudah 40-an, masih berguna?</summary><div class="ans">Justru itu yang dilatih. Pengalaman panjang jadi kekuatan kalau bisa diceritakan dengan bukti, dan ada latihan khusus untuk pertanyaan soal usia, pindah bidang, dan jeda kerja.</div></details>
+        <details><summary>Interviewku tinggal beberapa hari lagi.</summary><div class="ans">Masukkan tanggalnya di Siapkan Interview. Latihan otomatis dipadatkan. Kalau interviewnya besok, kamu dapat latihan kilat 4 pertanyaan dan Ceklis 24 Jam.</div></details>
+        <details><summary>Harus bicara keras? Aku malu.</summary><div class="ans">Nggak harus. Kamu bisa menjawab dengan diketik dan tetap dapat umpan balik lengkap. Mode lisan ada kalau kamu siap, dan rekamannya hanya untuk kamu dengar.</div></details>
+        <details><summary>Ini app yang harus di-install?</summary><div class="ans">Nggak. Intelligent Communicator dibuka lewat browser di HP atau laptop. Supaya cepat dibuka, simpan ke layar utama HP seperti app biasa.</div></details>
+        <details><summary>Perlu bikin akun atau password?</summary><div class="ans">Nggak. Cukup satu kode akses.</div></details>
+        <details><summary>Jawaban dan rekamanku aman?</summary><div class="ans">Posisi, jawaban, dan kalimat buktimu tersimpan di perangkatmu, bukan di server kami. Rekaman suara nggak disimpan sama sekali, hilang saat latihan ditutup.</div></details>
+        <details><summary>Kalau ganti HP, progresnya ikut?</summary><div class="ans">Bisa. Buka Pindah Progres dan salin kodenya. Di HP baru, masukkan kode akses yang sama, isi Siapkan Interview singkat, lalu tempel kode Pindah Progres tadi di menu Lainnya. Semua latihan dan Bank Bukti ikut pindah.</div></details>
+        <details><summary>Berapa lama sehari?</summary><div class="ans">Sekitar 15 menit. Latihan bebas boleh kapan saja di luar itu.</div></details>
+        <details><summary>Kalau bolong beberapa hari?</summary><div class="ans">Nggak apa-apa. Kamu lanjut dari hari terakhir, tanpa mengulang dari awal.</div></details>
+        <details><summary>Setelah 14 hari, terus gimana?</summary><div class="ans">Kamu dapat ringkasan 14 hari. Setelah interview, app menanyakan hasilnya, dan kamu bisa menyiapkan interview berikutnya. Bank Bukti dan jawaban andalanmu tetap ikut.</div></details>
+        <details><summary>Ada biaya bulanan?</summary><div class="ans">Nggak ada. Sekali bayar.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="sec-deep">
+  <div class="wrap">
+    <div class="narrow center">
+      <h2>Malam ini cukup mulai dari satu pertanyaan: ceritakan tentang diri Anda.</h2>
+      <p class="lead" style="margin-top:20px;">Kamu sudah menonton contoh jawaban, menghafal tips, dan mengulang kalimat di kepala sebelum tidur. Satu hal yang belum: menjawab dengan suaramu sendiri, lalu tahu bagian mana yang perlu diganti.</p>
+      <p class="closing-line">Pengalamanmu sudah ada. Tinggal latihan ngomongnya.</p>
+      <div class="cta-block">
+        <a class="btn" href="checkout.html">Mulai Latihan 15 Menit →</a>
+        <p class="btn-note">Dibuka dari browser HP atau laptop. Tanpa install, tanpa akun.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <a class="logo" href="index.html">Intelligent <em>Communicator</em></a>
+    <small>© 2026 Intelligent Communicator. Semua hak dilindungi.</small>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <div class="sp">
+    <b>Latihan wawancara 15 menit</b>
+    <small>Buka dari HP, tanpa install</small>
+  </div>
+  <a class="btn" href="checkout.html">Mulai</a>
+</div>
+
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan app diperbesar">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Tutup gambar">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" stroke="#1F2430" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+  <div class="lb-inner"><img id="lbImg" alt=""></div>
+</div>
+
+<script>
+(function(){
+  var bar=document.getElementById('stickyCta');
+  var hero=document.querySelector('.hero');
+  if(!bar||!hero)return;
+  document.body.classList.add('has-sticky');
+  function check(){bar.classList.toggle('on',hero.getBoundingClientRect().bottom<0);}
+  check();
+  window.addEventListener('scroll',check,{passive:true});
+  window.addEventListener('resize',check);
+})();
+
+/* geser + titik untuk testimoni dan alat (HP) */
+function scroller(trackSel,itemSel,dotsId){
+  var track=document.querySelector(trackSel),dots=document.getElementById(dotsId);
+  if(!track||!dots)return;
+  var slides=track.querySelectorAll(itemSel),btns=dots.querySelectorAll('button');
+  function active(){
+    var mid=track.scrollLeft+track.clientWidth/2,best=0,min=Infinity;
+    for(var i=0;i<slides.length;i++){
+      var c=slides[i].offsetLeft+slides[i].offsetWidth/2,d=Math.abs(c-mid);
+      if(d<min){min=d;best=i;}
+    }
+    for(var j=0;j<btns.length;j++)btns[j].classList.toggle('on',j===best);
+  }
+  var t;
+  track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(active,60);},{passive:true});
+  for(var k=0;k<btns.length;k++){
+    btns[k].addEventListener('click',function(){
+      var el=slides[Number(this.getAttribute('data-i'))];
+      if(!el)return;
+      track.scrollTo({left:el.offsetLeft-(track.clientWidth-el.offsetWidth)/2,behavior:'smooth'});
+    });
+  }
+  active();
+}
+scroller('.testi-grid','img','testiDots');
+scroller('#alatTrack','.alat-item','alatDots');
+
+/* tab alat (desktop) */
+(function(){
+  var tabs=document.querySelectorAll('.alat-tabs [role="tab"]');
+  function pick(tab){
+    for(var i=0;i<tabs.length;i++){
+      var on=tabs[i]===tab;
+      tabs[i].setAttribute('aria-selected',on?'true':'false');
+      tabs[i].setAttribute('tabindex',on?'0':'-1');
+      document.getElementById(tabs[i].getAttribute('aria-controls')).classList.toggle('on',on);
+    }
+  }
+  for(var i=0;i<tabs.length;i++){
+    tabs[i].addEventListener('click',function(){pick(this);});
+    tabs[i].addEventListener('keydown',function(e){
+      var idx=Array.prototype.indexOf.call(tabs,this),n=null;
+      if(e.key==='ArrowRight')n=tabs[(idx+1)%tabs.length];
+      if(e.key==='ArrowLeft')n=tabs[(idx-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault();pick(n);n.focus();}
+    });
+  }
+})();
+
+/* lightbox: membuka versi gambar yang sedang tampil (HP atau desktop) */
+(function(){
+  var lb=document.getElementById('lightbox'),img=document.getElementById('lbImg'),close=document.getElementById('lbClose');
+  var last=null;
+  function open(src,alt){
+    img.src=src;img.alt=alt||'';
+    lb.classList.add('on');document.body.style.overflow='hidden';close.focus();
+  }
+  function shut(){lb.classList.remove('on');img.removeAttribute('src');document.body.style.overflow='';if(last)last.focus();}
+  var zs=document.querySelectorAll('[data-zoom]');
+  for(var i=0;i<zs.length;i++){
+    zs[i].setAttribute('tabindex','0');
+    zs[i].setAttribute('role','button');
+    zs[i].addEventListener('click',function(){last=this;open(this.currentSrc||this.src,this.alt);});
+    zs[i].addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();this.click();}});
+  }
+  close.addEventListener('click',shut);
+  lb.addEventListener('click',function(e){if(e.target===lb)shut();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('on'))shut();});
+})();
+</script>
+</body>
+</html>
